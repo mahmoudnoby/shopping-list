@@ -1,0 +1,11 @@
+<a href="#" class="list-group-item list-group-item-action" (click)="onSelectRecipe()" >
+    <div  class="row">
+        <div class="col-md-8">
+            <h5 >{{recipe.name}}</h5>
+            <p >{{recipe.description}}</p>
+        </div>
+        <div class="col-md-4">
+            <img src={{recipe.image}} class="rounded img-fluid" [alt]="recipe.name">
+        </div>
+    </div>
+</a>

@@ -1,0 +1,31 @@
+<app-header  (featuredClicked)="onNavigate($event)" ></app-header>
+<mat-progress-bar *ngIf="navigateEle === 'recipes'" mode="indeterminate"></mat-progress-bar>
+<div class="container-fluid px-5">
+    <div class="row pt-5">
+        <div class="col-md-12">
+            <app-recipes *ngIf="navigateEle === 'recipes'"></app-recipes>
+            <app-shopping-list *ngIf="navigateEle === 'shopping-list'"></app-shopping-list>
+        </div>
+    </div>
+    <div class="row justify-content-center text-center mt-5 pt-5" 
+        *ngIf="navigateEle === 'home'">
+        <div class="col-7 text-info">
+            <h2>Welcome To Your Food Opening Market......</h2>
+            <h6>Please Select Your Shopping Category From the upper Navigation</h6>
+        </div>
+    </div>
+</div>
+<!-- <div class="container-fluid px-5">
+    <app-cockpit
+     (serverCreated)="onServerAdded($event)" 
+     (blueprintCreated)="onBluePrintAdded($event)"
+    ></app-cockpit>
+    <hr>
+    <div class="row">
+        <div class="col-md-10">
+            <app-server *ngFor="let serverElement of serverElements"
+            [serverName]="serverElement"
+            ></app-server>
+        </div>
+    </div>
+</div> -->
