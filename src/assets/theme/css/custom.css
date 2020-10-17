@@ -1,0 +1,463 @@
+
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.ttf") format("truetype"),
+    url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Light.eot");
+  src: url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.woff") format("woff"),
+    url("../fonts/OpenSans-Light.ttf") format("truetype"),
+    url("../fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("../fonts/OpenSans-Semibold.eot");
+  src: url("../fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Semibold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Semibold.woff") format("woff"),
+    url("../fonts/OpenSans-Semibold.ttf") format("truetype"),
+    url("../fonts/OpenSans-Semibold.svg#OpenSans-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.ttf") format("truetype"),
+    url("../fonts/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DroidKufiRegular";
+  src: url("../fonts/DroidKufiRegular.eot");
+  src: url("../fonts/DroidKufiRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/DroidKufiRegular.woff2") format("woff2"),
+    url("../fonts/DroidKufiRegular.woff") format("woff"),
+    url("../fonts/DroidKufiRegular.ttf") format("truetype"),
+    url("../fonts/DroidKufiRegular.svg#DroidKufiRegular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DroidKufiBold";
+  src: url("../fonts/DroidKufiBold.eot");
+  src: url("../fonts/DroidKufiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/DroidKufiBold.woff2") format("woff2"),
+    url("../fonts/DroidKufiBold.woff") format("woff"),
+    url("../fonts/DroidKufiBold.ttf") format("truetype"),
+    url("../fonts/DroidKufiBold.svg#DroidKufiBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+.font-B {
+  font-family: "OpenSans-Bold";
+}
+.font-L {
+  font-family: "OpenSans-Light";
+}
+.font-SB {
+  font-family: "OpenSans-Semibold";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  background: #f4f4f0;
+  font-size: 14px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.ar {
+  direction: rtl;
+  text-align: right;
+  font-family: "DroidKufiRegular", Arial, Helvetica, sans-serif;
+
+}
+
+.ar .font-B {
+  font-family: "DroidKufiBold";
+}
+.ar  .font-SB {
+  font-family: "DroidKufiBold";
+  font-weight: 600;
+  font-style: normal;
+}
+.ar .font-L {
+  font-family: "DroidKufiRegular";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ar .landing-slider .carousel-item{
+  float: left;
+  margin-left: 0;
+}
+.ar .carousel-control-prev {
+right: auto;
+}
+
+.ar #demo{
+  direction: ltr;
+}
+
+.btn-original {
+  border: 2px solid #fff;
+  padding: 5px 15px;
+  background: none;
+  border-radius: 0;
+  margin: 5px;
+  color: #fff;
+}
+.intl-tel-input input {
+  height: 38px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  width: 100% !important;
+  background-clip: padding-box;
+}
+.intl-tel-input  {
+  width: 100% !important;
+}
+
+
+.btn-green {
+  background: #8dc043;
+  border-color: #8dc043;
+}
+
+.gr-back {
+  background: #8dc043;
+}
+
+.pr-back {
+  background: #008795;
+}
+
+.gr-text {
+  color: #8dc043;
+}
+
+.pr-text {
+  color: #008795;
+}
+.section-block {
+  margin: 50px 0;
+  min-height: 500px;
+}
+.border-rounded {
+  border-radius: 50%;
+}
+
+
+
+.custom-carousel-arrows {
+  border: 1px solid #008795;
+  width: 50px;
+  margin: auto;
+  padding: 5px 7px;
+  color: #008795;
+}
+
+.ar .owlCarouselItems{
+direction: ltr;
+}
+.diamond-box{
+  overflow: visible  !important;
+}
+
+.ar .helth-tip__view--all{
+  margin-right: 10px;
+}
+
+.ar .fas,.far{
+  direction: rtl;
+}
+.ar .card-footer .card-footer__icon{
+  padding-right: 0 !important;
+  margin-right: -15px !important;
+}
+.ar .sort-input .sort-menu{
+  margin-left: 15px;
+}
+.ar .sort-input .sort-label{
+  margin-left: 7px;
+}
+
+.ar .navbar-nav{
+  margin-left: 10px !important;
+}
+
+.ar .book-visit-home {
+  left: 0;
+  width: 286px !important;
+}
+
+.ar .book-visit-home .close {
+  right: auto;
+  left: 10px;
+}
+
+.ar .login .login__form {
+  border-right: none !important;
+  border-left: 1px solid white !important;
+}
+.ar .singup__forget {
+  margin-right: 10px;
+}
+
+
+.ar .fast-track-request {
+  left: 40px;
+}
+
+.ar .map-page .toggler-hide {
+  left: auto !important;
+  right: 20px;
+}
+
+.ar .map-page .search-section .search-section__btn {
+  margin-right: 30px;
+  padding: 9px !important;
+}
+
+.ar .profile i {
+  padding-left: 5px;
+}
+
+.ar .profile .toolbar h4 {
+  margin-right: 20px;
+}
+
+
+.members span{
+  font-size: 12px !important;
+  font-weight: 600;
+  color: #31b0d5 !important;
+}
+.members .member_card_span:hover{
+  color: #0b7c9e !important;
+}
+.members span a{
+  text-decoration: none !important;
+  margin-top: 10px;
+}
+.members span .fas,.far{
+  font-size: 14px !important;
+}
+
+.ar .carousel-content--padding {
+  right: 150px;
+}
+
+.ar .intl-tel-input.allow-dropdown input,
+.ar .intl-tel-input.allow-dropdown input[type=text],
+.ar .intl-tel-input.allow-dropdown input[type=tel],
+.ar .intl-tel-input.separate-dial-code input,
+.ar .intl-tel-input.separate-dial-code input[type=text],
+.ar .intl-tel-input.separate-dial-code input[type=tel] {
+  padding-right: 52px;
+  padding-left: 6px;
+  direction: ltr;
+  text-align: right
+}
+
+.ar .intl-tel-input.allow-dropdown .flag-container,
+.ar .intl-tel-input.separate-dial-code .flag-container {
+  right: 0;
+  left: auto;
+}
+
+.ar .intl-tel-input .selected-flag .iti-arrow {
+  margin-right: 6px;
+}
+
+@media (max-width: 575.98px) {
+  .ar .carousel-content--padding {
+    right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .navigation nav .container-fluid .navbar-toggler {
+    left: auto !important;
+  }
+  .navbar-toggler {
+    padding: .25rem 0;
+  }
+
+  .navigation nav .container-fluid {
+    padding: 0 0 !important;
+  }
+
+  .navigation nav .container-fluid .navbar-brand {
+    margin-right: 25px !important;
+  }
+
+  .navbar-brand__media .nav-link {
+    padding: .5rem 0;
+  }
+}
+
+.ar .bcamhs-banner {
+  background-image: url('https://d1660k0ffozk48.cloudfront.net/images/bcahms-slide_ar-2f193588835ae1bdaf05fca6ae87c85f.jpg') !important;
+}
+
+.ar .contact-us .head-office {
+  margin-right: 20px;
+  margin-left: 0 !important;
+  border-left: 1px solid #ccc;
+  border-right: none !important;
+}
+
+.ar .contact-us--mr {
+  margin-right: 50px;
+}
+
+.ar .send-message .form-group {
+  margin-right: 0 !important;
+  margin-left: 25px;
+}
+
+.ar .contact-us_btn {
+  float:  left !important;
+  margin-right: 0 !important;
+  margin-left: 25px;
+}
+
+.ar .fast-track-request {
+  right: auto !important;
+}
+
+.ar .members .members__card .free_tag {
+  padding: 0 23px 0 20px !important;
+  margin: 0 -20px 10px 100px !important;
+}
+
+.ar .members .members__card .free_tag::after {
+  border-right: 10px solid #5bc0de !important;
+  border-left: 0 !important;
+  right: auto !important;
+  left: 0;
+}
+
+.ar .members .members__card .free_tag::before {
+  right: 10px;
+  left: 0 !important;
+}
+
+.ar .alert-dismissible {
+  padding-left: 0 !important;
+  padding-right: 4rem !important;
+}
+
+.ar .join_btn {
+  margin-right: 0 !important;
+  margin-left: 20px !important;
+}
+.ar .td-phone-number {
+  direction: ltr;
+  text-align: right
+}
+.ar .card-num {
+  direction: ltr;
+  text-align: right
+}
+.ar .bell{
+  color: #fff !important;
+}
+
+.terms_linke{
+  color: #5bc0de;
+}
+.ar .search-section__slc{
+  position: absolute;
+  left: 600px;
+}
+.ar .map-page{
+  padding-right: 15px !important;
+}
+.ar .navbar__contact, .ar .formated_address{
+  padding-right: 16px;
+}
+.ar .edit_location p{
+  text-align: left;
+  margin-left: 0px !important;
+}
+
+.ar .book-later-request {
+  right: auto !important;
+  left: 70px;
+}
+
+.ar .book-later {
+  left: 0;
+}
+
+.ar .book-later .close {
+  right: auto !important;
+  left: 16px;
+}
+
+.ar .book-later_error {
+  padding: 1px 10px 1px 154px !important;
+}
+
+
+.ar .custom{
+  padding-right: 55px !important;
+  padding-left: 0px !important;
+}
+.ar .country-list{
+  position: relative;
+  border: none;
+  direction: rtl;
+  overflow-x: hidden;
+  text-align: right;
+  width: 287px;
+}
+.ar .country-dropdown{
+  left: -234px !important
+}
+.intl-tel-input .country-list{
+  width: 287px !important;
+}
+.book-visit-home .intl-tel-input input {
+  border: none;
+  background-color: #003a5e;
+  color: #fff;
+}
+
+.book-visit-home .intl-tel-input .country-list {
+  background-color: #003a5e;
+  color: #fff;
+}
+
+.book-visit-home .country-dropdown {
+  border: none !important;
+}
+
+.ar .bcamhs-forth-card .media a {
+  padding-left: 10px;
+}

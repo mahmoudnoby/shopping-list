@@ -26,6 +26,12 @@
               <a class="dropdown-item" href="#">Logout</a>
             </div>
           </li>
+          <li *ngIf="!isArabicLang" class="nav-item">
+            <a href="" (click)="changeCurrentLang()" class="nav-link">Arabic</a> 
+          </li>
+          <li *ngIf="isArabicLang" class="nav-item">
+            <a href="" (click)="changeCurrentLang()" class="nav-link">English</a> 
+          </li>
       </ul>
     </div>
   </nav>
