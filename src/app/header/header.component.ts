@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit{
     }
 
     changeCurrentLang() {
-        if(this.translate.currentLang == 'en') {
+        if( this.translate.currentLang == 'en' ) {
             this.switchLang.setCurrentLang('ar');
         }else {
             this.switchLang.setCurrentLang('en');

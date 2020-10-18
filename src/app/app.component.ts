@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
       
     translate.setDefaultLang('en');
     translate.use(switchLang.getCurrentLang());
+    debugger
     if(switchLang.getCurrentLang() == 'ar') {
       this.switchLang.setArabicLanguageStyle();
       this.arabicLang = true;

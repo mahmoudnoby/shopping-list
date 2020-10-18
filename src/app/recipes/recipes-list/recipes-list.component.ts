@@ -24,14 +24,14 @@ export class RecipesListComponent implements OnInit {
       image: '../../../assets/1537973085542.jpeg'
     }
   ]
-  @Output() selectedRecipe = new EventEmitter<Recipe>();
+  @Output() selectedRecipeObj = new EventEmitter<Recipe>();
   constructor() { }
 
   ngOnInit(): void {
   }
 
   onRecipeSelected(selectedRecipe: Recipe){
-    this.selectedRecipe.emit(selectedRecipe)
+    this.selectedRecipeObj.emit(selectedRecipe)
     console.log(selectedRecipe)
   }
 }
